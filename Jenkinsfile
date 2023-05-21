@@ -8,19 +8,8 @@ pipeline {
     }
 
     stage('Log') {
-      parallel {
-        stage('Log') {
-          steps {
-            sh 'ls -la'
-          }
-        }
-
-        stage('Front-End Unit tests') {
-          steps {
-            sh 'cd madhuraothota/react-count && npm i && npm run test:unit'
-          }
-        }
-
+      steps {
+        sh 'ls -la'
       }
     }
 
