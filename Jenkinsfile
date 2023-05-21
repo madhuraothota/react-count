@@ -15,9 +15,9 @@ pipeline {
           }
         }
 
-        stage('Front-End Unit Test') {
+        stage('Front-End Unit tests') {
           steps {
-            sh 'cd react-count && npm i && npm run test:unit'
+            sh 'cd madhuraothota/react-count && npm i && npm run test:unit'
           }
         }
 
